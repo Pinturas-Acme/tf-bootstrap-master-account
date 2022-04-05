@@ -30,3 +30,16 @@ output "policy_staging_ou_id" {
 output "suspended_ou_id" {
   value = aws_organizations_organizational_unit.suspended.id
 }
+
+# Workloads OU
+output "workloads_ou_id" {
+  value = aws_organizations_organizational_unit.workloads.id
+}
+
+output "workloads_sdlc_ou_id" {
+  value = aws_organizations_organizational_unit.workloads_sdlc.id
+}
+
+output "workload_prod_ou_id" {
+  value = aws_organizations_organizational_unit.workloads_prod.id
+}
