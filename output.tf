@@ -22,6 +22,11 @@ output "sandbox_ou_id" {
 }
 
 # Policy Staging OU
-output "policy_staging_ou" {
+output "policy_staging_ou_id" {
   value = aws_organizations_organizational_unit.policy_staging.id
+}
+
+# Suspended OU
+output "suspended_ou_id" {
+  value = aws_organizations_organizational_unit.suspended.id
 }
