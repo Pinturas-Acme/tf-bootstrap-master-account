@@ -1,6 +1,6 @@
 {
   "name": "tf-bootstrap-master-account",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "This terraform module configure the master account",
   "main": "index.js",
   "repository": "git@github.com:Pinturas-Acme/repo-template.git",
