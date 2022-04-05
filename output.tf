@@ -43,3 +43,16 @@ output "workloads_sdlc_ou_id" {
 output "workload_prod_ou_id" {
   value = aws_organizations_organizational_unit.workloads_prod.id
 }
+
+# Deployments OU
+output "deployment_ou_id" {
+  value = aws_organizations_organizational_unit.deployments.id
+}
+
+output "deployment_sdlc_ou_id" {
+  value = aws_organizations_organizational_unit.deployments_sdlc.id
+}
+
+output "deployment_prod_ou_id" {
+  value = aws_organizations_organizational_unit.deployments_prod.id
+}

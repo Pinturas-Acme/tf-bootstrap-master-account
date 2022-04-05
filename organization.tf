@@ -53,3 +53,19 @@ resource "aws_organizations_organizational_unit" "workloads_prod" {
   name      = "Prod"
   parent_id = aws_organizations_organizational_unit.workloads.id
 }
+
+# Deployments OU
+resource "aws_organizations_organizational_unit" "deployments" {
+  name      = "Deployments"
+  parent_id = aws_organizations_organization.org.roots[0].id
+}
+
+resource "aws_organizations_organizational_unit" "deployments_sdlc" {
+  name      = "SDLC"
+  parent_id = aws_organizations_organizational_unit.deployments.id
+}
+
+resource "aws_organizations_organizational_unit" "deployments_prod" {
+  name      = "Prod"
+  parent_id = aws_organizations_organizational_unit.deployments.id
+}
