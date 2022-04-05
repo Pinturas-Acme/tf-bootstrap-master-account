@@ -1,0 +1,23 @@
+{
+  "name": "repo-template",
+  "version": "1.0.0-alpha.0",
+  "main": "index.js",
+  "repository": "git@github.com:Pinturas-Acme/repo-template.git",
+  "license": "MIT",
+  "scripts": {
+    "commit": "./node_modules/cz-customizable/standalone.js",
+    "prepare": "husky install",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "^6.3.0",
+    "husky": "^7.0.0",
+    "standard-version": "^9.3.2"
+  },
+  "config": {
+    "cz-customizable": {
+      "config": "config/cz-config.js"
+    }
+  }
+}
