@@ -20,3 +20,8 @@ output "shared_ou_id" {
 output "sandbox_ou_id" {
   value = aws_organizations_organizational_unit.sandbox.id
 }
+
+# Policy Staging OU
+output "policy_staging_ou" {
+  value = aws_organizations_organizational_unit.policy_staging.id
+}

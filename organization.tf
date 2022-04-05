@@ -25,3 +25,9 @@ resource "aws_organizations_organizational_unit" "sandbox" {
   name      = "Sanbox"
   parent_id = aws_organizations_organization.org.roots[0].id
 }
+
+# Policy Staging OU
+resource "aws_organizations_organizational_unit" "policy_staging" {
+  name      = "Policy Staging"
+  parent_id = aws_organizations_organization.org.roots[0].id
+}
