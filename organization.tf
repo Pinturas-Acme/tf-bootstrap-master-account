@@ -19,3 +19,9 @@ resource "aws_organizations_organizational_unit" "shared" {
   name      = "Shared"
   parent_id = aws_organizations_organizational_unit.infrastructure.id
 }
+
+# Sandbox OU
+resource "aws_organizations_organizational_unit" "sandbox" {
+  name      = "Sanbox"
+  parent_id = aws_organizations_organization.org.roots[0].id
+}

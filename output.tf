@@ -15,3 +15,8 @@ output "infrastructure_ou_id" {
 output "shared_ou_id" {
   value = aws_organizations_organizational_unit.shared.id
 }
+
+# Sandbox OU
+output "sandbox_ou_id" {
+  value = aws_organizations_organizational_unit.sandbox.id
+}
