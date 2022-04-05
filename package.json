@@ -1,13 +1,17 @@
 {
-  "name": "repo-template",
+  "name": "tf-bootstrap-master-account",
   "version": "1.0.0-alpha.0",
+  "description": "This terraform module configure the master account",
   "main": "index.js",
   "repository": "git@github.com:Pinturas-Acme/repo-template.git",
   "license": "MIT",
   "scripts": {
     "commit": "./node_modules/cz-customizable/standalone.js",
     "prepare": "husky install",
-    "release": "standard-version"
+    "release": "standard-version",
+    "release:alpha": "standard-version --prerelease",
+    "release:beta": "standard-version --prerelease beta",
+    "release:rc": "standard-version --prerelease rc"
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
